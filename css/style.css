@@ -8,6 +8,14 @@
     --text-black-700: #504E70;
 }
 
+body.dark {
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #FFFFFF;
+    --text-black-700: #E9E9E9;
+}
+
 body {
     line-height: 1.5;
     font-size: 16px;
@@ -326,6 +334,7 @@ h3.my-profession {
     height: 400px;
     margin: auto;
     border-radius: 5px;
+    padding: 10px;
 }
 
 /* About */
@@ -385,12 +394,17 @@ h3.my-profession {
 
 .about .about-content .personal-info .buttons {
     margin-top: 30px;
+    padding-left: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn:first-child {
+    margin-right: 15px;
 }
 
 .about .about-content .personal-info .buttons .btn {
-    margin-right: 15px;
     margin-top: 10px;
 }
+
 
 .about .about-content .skills {
     flex: 0 0 40%;
@@ -521,7 +535,7 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
-/* service */
+/* Service */
 
 .service .container {
     padding-bottom: 40px;
@@ -723,6 +737,18 @@ h3.my-profession {
         display: block;
         margin-left: 0;
     }
+
+    .about .about-content .personal-info .buttons {
+        padding-left: 15px;
+    }
+
+    .about .about-content .personal-info .buttons .btn:first-child {
+        margin-right: 10px;
+    }
+    
+    .about .about-content .personal-info .buttons .btn:last-child {
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -732,28 +758,20 @@ h3.my-profession {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .home .home-img {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin: 100px 0 0 0;
-    }
 
-    .home .home-img img {
-        height: unset;
-        width: 80%;
-    }
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
-        min-height: 100vh;
     }
 
-    .about .section .container {
-        padding-top: 0px;
+    .home .home-img {
+        display: none;
     }
 }
 
 @media (max-width: 767px) {
+    .contact .contact-form .col-6 ,
+    .contact .contact-info-item ,
     .portfolio .portfolio-item ,
     .service .service-item ,
     .about .about-content .experience ,
