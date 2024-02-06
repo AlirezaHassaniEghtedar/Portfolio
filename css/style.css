@@ -247,7 +247,7 @@ section {
 
 .aside .nav-toggler span::before {
     content: '';
-    height: 1px;
+    height: 1.5px;
     width: 18px;
     background: var(--skin-color);
     position: absolute;
@@ -257,7 +257,7 @@ section {
 
 .aside .nav-toggler span::after {
     content: '';
-    height: 1px;
+    height: 1.5px;
     width: 18px;
     background: var(--skin-color);
     position: absolute;
